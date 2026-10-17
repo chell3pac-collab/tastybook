@@ -1,0 +1,35 @@
+.category-gallery__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.category-card {
+  display: block;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 34px rgba(43, 33, 24, 0.14);
+  }
+}
+
+.category-card__image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.category-card__name {
+  display: block;
+  padding: 0.6rem 0.8rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-align: center;
+}

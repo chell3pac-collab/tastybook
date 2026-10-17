@@ -1,0 +1,62 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in srgb, var(--color-bg) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  min-height: 4rem;
+  padding-block: 0.5rem;
+}
+
+.header__logo {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+.header__logo-accent {
+  color: var(--color-accent);
+}
+
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.header__link {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-muted);
+  transition: background-color 0.15s ease, color 0.15s ease;
+
+  &:hover {
+    background: var(--color-surface-alt);
+    color: var(--color-text);
+  }
+}
+
+.header__link--active {
+  background: var(--color-accent);
+  color: var(--color-accent-text);
+}
+
+@media (min-width: 640px) {
+  .header__link {
+    font-size: 1rem;
+    padding: 0.4rem 0.9rem;
+  }
+}

@@ -1,0 +1,24 @@
+.hero {
+  padding: 2.5rem 0;
+  background: linear-gradient(135deg, #e8875e 0%, var(--color-accent) 60%, #b83a1f 100%);
+  border-radius: var(--radius-md);
+  color: #ffffff;
+}
+
+.hero__inner {
+  display: grid;
+  gap: 0.8rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: clamp(1.7rem, 5vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.hero__text {
+  max-width: 34rem;
+  color: rgba(255, 255, 255, 0.9);
+}

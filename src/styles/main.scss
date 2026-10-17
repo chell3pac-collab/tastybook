@@ -1,0 +1,16 @@
+@use './globals';
+@use './blocks/app';
+@use './blocks/header';
+@use './blocks/footer';
+@use './blocks/hero';
+@use './blocks/search-form';
+@use './blocks/category-chips';
+@use './blocks/category-gallery';
+@use './blocks/recipe-grid';
+@use './blocks/recipe-card';
+@use './blocks/favorite-button';
+@use './blocks/status-box';
+@use './blocks/loader';
+@use './blocks/pagination';
+@use './blocks/dish-of-day';
+@use './blocks/recipe-detail';

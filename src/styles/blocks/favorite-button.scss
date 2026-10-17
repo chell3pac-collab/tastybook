@@ -1,0 +1,31 @@
+.favorite-button {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--color-muted);
+  font-size: 1.15rem;
+  line-height: 1;
+  box-shadow: 0 2px 8px rgba(43, 33, 24, 0.2);
+  transition: transform 0.15s ease, color 0.15s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    color: var(--color-accent);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.favorite-button--active {
+  color: var(--color-accent);
+}
